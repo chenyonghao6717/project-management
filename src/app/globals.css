@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
-@dark class;
+/* @dark class; */
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --color-white: #ffffff;
