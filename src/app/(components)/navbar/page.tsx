@@ -14,11 +14,13 @@ const Navbar = () => {
     <div className="flex items-center justify-between bg-white px-4 py-3 dark:bg-black">
       {/* Search Bar */}
       <div className="flex items-center gap-8">
+        {/* Show Menu Button */}
         {!isSidebarCollapsed ? null : (
           <button onClick={() => setIsSidebarCollapsed(!isSidebarCollapsed)}>
             <Menu className="h-8 w-8 dark:text-white" />
           </button>
         )}
+        {/* Search Bar */}
         <div className="relative flex h-min w-[200px]">
           <Search className="absolute top-1/2 left-[4px] mr-2 h-5 w-5 -translate-y-1/2 transform cursor-pointer dark:text-white" />
           <input
