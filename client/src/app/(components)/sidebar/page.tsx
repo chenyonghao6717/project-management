@@ -150,14 +150,6 @@ const SidebarLink = ({
   // the exception is
   const isActive =
     pathname === href || (pathname === "/" && href === "/dashboard");
-  const screenWidth = window.innerWidth;
-
-  const {
-    isSidebarCollapsed,
-    setIsSidebarCollapsed,
-    isDarkMode,
-    setIsDarkMode,
-  } = useStore();
 
   return (
     <Link href={href} className="w-full">
